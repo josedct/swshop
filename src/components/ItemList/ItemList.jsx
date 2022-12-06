@@ -1,6 +1,7 @@
 import Item from '../Item/Item'
 
 const ItemList = ({items}) => {
+  //Componente que mapea con ITEM la lista de productos que se le envia segun. 
   const dirproductos = 'https://reactcoder.consultoriainformaticaon.com/productos'
   
   return (

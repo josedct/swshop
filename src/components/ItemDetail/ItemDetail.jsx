@@ -3,6 +3,7 @@ import ItemDetailGalery from '../ItemDetailGallery/ItemDetailGallery'
 import ItemDetailInfo from '../ItemDetailInfo/ItemDetailInfo'
 
 const ItemDetail = ({prodDetail} ) => {
+    //Componente que muestra el detalle de algun producto en particular, se compone de otros dos componentes (ITEMDETAILGALERY e ITEMDETAILINFO) y tambien muestra una descripcion.
     return (
         <div className='container'>
             <div className="row">

@@ -1,8 +1,8 @@
 import { useState } from "react"
 
 const ItemDetailGalery = ({ArrayGalery, IdProduct}) => {
+    //Componente que recibe un arreglo de imagenes de algun producto en particular y crea una minigaleria donde se pueden ver las imagenes.
     const dirproductos = 'https://reactcoder.consultoriainformaticaon.com/productos'
-
     const [imgsrc, setImgsrc] = useState(ArrayGalery[0])
 
     const changeImg = (img)=>{

@@ -13,6 +13,7 @@ const formatPrecio = (num) =>{
 
 const Item = ({id="0",title="Titulo de producto",precio=1999.99,url=ProductDefImg}) => {
   return (
+    // Componente que muestra un preview (Nombre, Precio e imagen del producto) de un producto en particular, se usa LINK para enviar al detalle del producto seleccionado. 
     <div className="col">
         <div  className="shadow card text-center border-light h-100">
             <img src={url} className="card-img-top" alt="Imagen por default"/>

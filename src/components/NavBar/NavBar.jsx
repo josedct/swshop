@@ -9,6 +9,7 @@ import IconSudadera from "../../assets/icono_sudadera.svg"
 import IconTenis from "../../assets/icono_tenis.svg"
 
 const NavBar = () => {
+  //Componente contenedor de la barra de navegacion o menu con el BRAND, los NAVITEM y el CARTWIDGET para los diferentes enlaces de categorias. 
   return (
     <nav className="navbar sticky-top navbar-expand-lg bg-light shadow-sm">
         <div className="container-fluid">

@@ -1,5 +1,4 @@
-import { useState } from "react"
-import ItemCount from "../ItemCount/ItemCount"
+import ItemDetailOption from "../ItemDetailOption/ItemDetailOption"
 
 const formatPrecio = (num) =>{
     return new Intl.NumberFormat("ES-MX",{
@@ -11,12 +10,8 @@ const formatPrecio = (num) =>{
     ).format(num)
 }
 
-const showNumItems = (num) => {
-    console.log(`Se compraron: ${num} producto(s)`)
-}
-
 const ItemDetailInfo = ({nombre,categoria,modelo,precio,stock,color,estilo}) => {
-    
+    //Componenete que muestra la informacion basica del producto y usa a ITEMDETAILOPTION.
     return (
     <div className="container p-4 m-2 h-100">
         <div className="row p-2 bg-light">
@@ -30,7 +25,7 @@ const ItemDetailInfo = ({nombre,categoria,modelo,precio,stock,color,estilo}) => 
         
         <div className="row p-2 bg-light">
             <div className="col-12 p-0">
-                < ItemCount stock={stock} initial={1} onAdd={showNumItems} />
+                < ItemDetailOption stock={stock} />
             </div>
         </div>
     </div>
